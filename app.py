@@ -2,14 +2,16 @@ import pywhatkit
 import pyautogui
 import time
 
-# Define the recipient's phone number and message
-recipient_number = '+918424849827'
-message = 'All the Best !!'
+##customizable inputs 
+recipient_number = 'ENTER_PHONE_NUMBER'
+message = 'ENTER_MSG'
+hours='ENTER_HOUR' #in 24 hour format not need of preceeding zero 
+minutes='ENTER_MINUTES' #at what minute 
 
-# Schedule the message to be sent at 10:47
-pywhatkit.sendwhatmsg(recipient_number, message, 11,1)
 
-# Delay for a few seconds to ensure the message sending dialog appears
+pywhatkit.sendwhatmsg(recipient_number, message, hours,minutes)
+
+
 time.sleep(20)
 
 
